@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Website</title>
+        <link href = "{% static '/css/style.css' %}" rel = "stylesheet" type = "text/css">
+        <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         
+    </head>
+
+    <body>
+        <br>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-3">
+                    <div class = "card card-body h-100 border-info" id = "profile-wrapper">
+                        <img id = "profile-pic" src="{% static '/images/imran.jpg' %}" >
+                        <br>
+                        <h4>Hi, I am Imran</h4>
+                        <p>I Love Coding, Programming and I am Python and Django Developer</p>
+                    </div>
+                </div>
+                <div class = "col-md-9">
+                    <div class = "card card-body h-100 border-info">
+                        <h4>About Me</h4>
+                        <br>
+                        <p>Currently, I am serving as a python trainer at Narail Govt. High School where I teach/train in python language to the 
+                            students of class 6 to 10. This is a Govt. project under Information and comunication division. The name of the 
+                            project is "School of future under Sheikh Russel Digital lab".
+                        </p>
+                        <p>
+                            Before that I have completed my professional degree "CSE Fundamentals with Phitron" in phitron.io, where I learnd
+                            All the basic fundamentals in computer science and engineering. 
+                        </p>
+                        <p>
+                            I have completed my master's degree in English from Govt. B. L. College in 2010.
+                        </p>
+                        <p>
+                            Now I am a Python and Django developer. I love my work very much!
+                        </p>
+                        <ul class = "social-links">
+                            <li><img class = "social" src = "{% static 'images/facebook.png' %}"></li>
+                            <li><img class = "social" src = "{% static 'images/github.png' %}"></li>
+                            <li><img class = "social" src = "{% static 'images/linkedin.png' %}"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <div class = "card card-body"></div>
+                </div>
+                <div class = "col-md-6">
+                    <div class = "card card-body"></div>
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <div class = "card card-body"></div>
+                </div>
+                <div class = "col-md-6">
+                    <div class = "card card-body"></div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </body>
+</html>
